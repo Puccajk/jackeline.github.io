@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Meu Portfólio Pessoal</title>
+
+</head>
+<body>
+
+    <!-- Menu de Navegação Superior -->
+    <header>
+        <nav class="menu-container">
+            <ul class="menu-links">
+            
+                <li><a href="#sobre" class="nav-link active">Sobre Mim</a></li>
+                <li><a href="#formacao" class="nav-link">Formação</a></li>
+                <li><a href="#portifolio" class="nav-link">Portfólio</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        
+        <section id="sobre">
+
+
+            <img src="imagens/foto de apresentacao.jpeg" alt="Foto de Perfil" title="foto de perfil" class="foto">
+            <h1>Jackeline, 34 anos</h1>
+            <p>Desenvolvedora Web apaixonada por tecnologia <br> e focada em criar soluções elegantes, modernas e totalmente funcionais.<br>
+            Tenho experiência em front-end com habilidades em HTML, CSS e JavaScript.
+            </p>
+        
+    
+        </section>
+
+
+        <section id="formacao">
+            <img src="imagens/imagem ads.jpg" alt="imagem1" title="imagem1" class="foto">
+            <h2>Formação</h2>
+            <p>Técnico em serviços jurídicos - Etec Paulino Botelho, 2017.</p>
+            <p>Cursando o 2º semestre de Analise e desenvolvimento de sistemas - Instituição Uninter.</p>
+        </section>
+
+
+         <section id="portifolio"
+
+             <div class="texto-portifolio"></div>
+            <h2>Portfólio</h2>
+            <p>Confira alguns dos meus projetos desenvolvidos:</p>
+            </div>
+            <div class="imagem-portifolio">
+            <a href="imagens/calendario e assistente digital.jpeg" target="_blank" rel="noopener">
+                <img src="imagens/calendario e assistente digital.jpeg" alt="foto projeto" title="foto projeto" class="projeto">
+            </a>
+            <a href="imagens/nutriappmobile.png" target="_blank" rel="noopener">
+                <img src="imagens/nutriappmobile.png" alt="foto projeto2" title="foto projeto" class="projeto">
+            </a>
+            </div>
+            
+        
+
+        </section>
+
+
+        <section id="contato">
+            <h2>Entre em contato</h2>
+
+            <form id="meuContato">
+
+                <div class="campo">
+                    <label for nomeCliente">Nome:</label>
+                    <input type="text" id="nomeCliente" placeholder="Digite seu nome aqui" required>
+
+                </div><BR>
+
+                <div class="campo">
+                    <label for emailCliente">E-mail:</label>
+                    <input type="email" id="emailCliente" placeholder="Digite seu e-mail aqui" required></textarea>
+
+                </div><BR>
+                <div class="campo">
+                    <label for="mensagemCliente">Mensagem:</label>
+                    <textarea id="mensagemCliente" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div id="resposta" class="feedback"></div>
+        </section>
+                
+
+    </main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+
+
+<style>
+        /* RESET */
+     
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+       
+        body {
+            background-color: #1a1a2e;
+            color: #f4f7f6;
+            line-height: 1.6;
+        }
+
+        /* Mantém o menu fixo no topo da página */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #0b0b2e;
+            z-index: 1000;
+        }
+
+        /* Flexbox para alinhar o menu ao centro horizontalmente e verticalmente */
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Estilização da lista do menu */
+        .menu-links {
+            display: flex;
+            list-style: none;
+            gap: 30px; /* Espaçamento igual entre os links */
+        }
+
+        /* Estilo visual dos links */
+        .menu-links a {
+            color: #ffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        
+        }
+
+        /* Efeito de passar o mouse nos links (Hover) */
+        .menu-links a:hover, .menu-links a.active {
+            color: #9f94d3;
+        }
+
+        /* --- ESTRUTURA DAS SEÇÕES --- */
+        /* Configuração comum para todas as seções do site */
+        section {
+            padding: 100px 20px 80px 20px; /* Compensação de 100px no topo por causa do menu fixo */
+            min-height: 100vh; /* Faz cada seção ocupar no mínimo o tamanho total da tela */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Alternância de cores de fundo para diferenciar as seções */
+        #formacao { background-color: #1a1a2e; color: #ffffff; }
+        #sobre { background-color: #1a1a2e; }
+        #portifolio { background-color: #9f94d3; }
+        #contato { background-color: #1a1a2e; }
+
+        /* Estilização dos títulos principais */
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2e1a28;
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+
+    
+
+    /* Grid responsivo */
+        #portifolio {
+            display: grid;
+            grid-template-columns: 1fr, 1fr;
+            align-items: center;
+            gap: 25px;
+        
+        
+        }
+
+
+        .texto-portifolio {
+            grid-column: 1;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imagem-portifolio {
+            grid-column: 2;
+            display: flex;
+            justify-content: flex-end;
+            gap:15px;
+            
+           
+        }
+
+        .projeto {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 4px solid #ffff;
+            
+        }    
+
+        #formacao {
+            background-color: #030115;
+            border-radius: 8px;
+            overflow: hidden
+            border: 1px solid #e2e2e2;
+        }
+
+    
+        
+        #sobre {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+
+        #contato {
+            background-color: #030115;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #meucontato {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 20px;
+        }
+
+        .campo input, .campo textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #9f94d3;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #7a6bb0;
+        }
+
+
+
+        .perfil {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .foto{
+            
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffff;
+        }
+
+        
+    
+    </style>
